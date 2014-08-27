@@ -1,0 +1,26 @@
+{
+  "name": "prelude",
+  "version": "0.1.0",
+  "description": "Flexible, responsive, mobile-first CSS framework using Less",
+  "main": "prelude.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charbelrami/prelude.git"
+  },
+  "keywords": [
+    "css",
+    "less",
+    "framework",
+    "flexbox",
+    "responsive"
+  ],
+  "author": "Charbel Rami",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charbelrami/prelude/issues"
+  },
+  "homepage": "https://github.com/charbelrami/prelude"
+}
