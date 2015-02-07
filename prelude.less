@@ -1,0 +1,126 @@
+/*
+Copyright (c) 2014-2015 Charbel Rami. MIT License.
+*/
+
+@gutter: 10px;
+
+* {
+  box-sizing: border-box;
+  &:before, &:after {
+    &:extend(*);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-row {
+  @media (min-width: 24em) {
+    display: flex;
+  }
+  > * {
+    flex-grow: 1;
+  }
+}
+
+.grid-row-m {
+  @media (min-width: 48em) {
+    display: flex;
+  }
+  > * {
+    flex-grow: 1;
+  }
+}
+
+.columns(@n, @size, @i: 1) when (@i =< @n) {
+  .col-@{size}-@{i} {
+    flex-basis: (@i * 100% / @n);
+  }
+  .columns(@n, @size, (@i + 1));
+}
+
+@media (min-width: 24em) {
+  .columns(12, s);
+}
+
+@media (min-width: 48em) {
+  .columns(12, m);
+}
+
+@media (min-width: 62em) {
+  .columns(12, l);
+}
+
+.gutters {
+  padding-left: @gutter;
+  padding-right: @gutter;
+  > * {
+    margin-left: @gutter;
+    margin-right: @gutter;
+  }
+}
+
+.gutters-ver {
+  padding-top: 1px; // workaround
+  padding-bottom: 1px; // workaround
+  > * {
+    margin-top: @gutter * 2;
+    margin-bottom: @gutter * 2;
+  }
+}
+
+.responsive {
+  @media (min-width: 24em) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.responsive-m {
+  @media (min-width: 48em) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.equal {
+  > * {
+    flex: 1;
+  }
+}
+
+.cross-center {
+  align-items: center;
+}
+
+.cross-start {
+  align-items: flex-start;
+}
+
+.cross-end {
+  align-items: flex-end;
+}
+
+.self-cross-center {
+  align-self: center;
+}
+
+.self-cross-start {
+  align-self: flex-start;
+}
+
+.self-cross-end {
+  align-self: flex-end;
+}
+
+.self-cross-stretch {
+  align-self: stretch;
+}
