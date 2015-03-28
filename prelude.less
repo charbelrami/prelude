@@ -2,7 +2,8 @@
 Copyright (c) 2014-2015 Charbel Rami. MIT License.
 */
 
-@gutter: 10px;
+@gutter: 1vw;
+@gutter-ver: 20px;
 
 * {
   box-sizing: border-box;
@@ -69,11 +70,10 @@ img {
 }
 
 .gutters-ver {
-  padding-top: 1px; // workaround
-  padding-bottom: 1px; // workaround
+  overflow: auto; // collapsing margins workaround
   > * {
-    margin-top: @gutter * 2;
-    margin-bottom: @gutter * 2;
+    margin-top: @gutter-ver;
+    margin-bottom: @gutter-ver;
   }
 }
 

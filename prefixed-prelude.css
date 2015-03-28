@@ -239,16 +239,15 @@ img {
   }
 }
 .gutters {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 .gutters > * {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 .gutters-ver {
-  padding-top: 1px;
-  padding-bottom: 1px;
+  overflow: auto;
 }
 .gutters-ver > * {
   margin-top: 20px;
