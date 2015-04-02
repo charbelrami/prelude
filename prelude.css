@@ -172,8 +172,15 @@ img {
     flex-direction: row;
   }
 }
+.multiline {
+  display: flex;
+  flex-wrap: wrap;
+}
+.multiline > * {
+  flex-shrink: 0;
+}
 .equal > * {
-  flex: 1;
+  flex-grow: 1;
 }
 .cross-center {
   align-items: center;
