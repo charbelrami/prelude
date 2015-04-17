@@ -176,9 +176,6 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-.multiline > * {
-  flex-shrink: 0;
-}
 .multiline.gutters-ver {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -188,10 +185,10 @@ img {
   margin-bottom: 10px;
 }
 .equal > * {
-  flex: 1;
+  flex: 1 0 0;
 }
 .multiline.equal > * {
-  flex-grow: 1;
+  flex: 1 0 auto;
 }
 .cross-center {
   align-items: center;

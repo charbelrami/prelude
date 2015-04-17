@@ -94,9 +94,6 @@ img {
 .multiline {
   display: flex;
   flex-wrap: wrap;
-  > * {
-    flex-shrink: 0;
-  }
 }
 
 .multiline.gutters-ver {
@@ -110,13 +107,13 @@ img {
 
 .equal {
   > * {
-    flex: 1;
+    flex: 1 0 0;
   }
 }
 
 .multiline.equal {
   > * {
-    flex-grow: 1;
+    flex: 1 0 auto;
   }
 }
 

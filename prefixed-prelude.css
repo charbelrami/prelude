@@ -288,11 +288,6 @@ img {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.multiline > * {
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-}
 .multiline.gutters-ver {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -303,15 +298,15 @@ img {
 }
 .equal > * {
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0;
+          flex: 1 0 0;
 }
 .multiline.equal > * {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 .cross-center {
   -webkit-box-align: center;
