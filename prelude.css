@@ -188,7 +188,7 @@ img {
   margin-bottom: 10px;
 }
 .equal > * {
-  flex-grow: 1;
+  flex: 1;
 }
 .cross-center {
   align-items: center;

@@ -303,9 +303,9 @@ img {
 }
 .equal > * {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .cross-center {
   -webkit-box-align: center;
