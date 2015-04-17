@@ -190,6 +190,9 @@ img {
 .equal > * {
   flex: 1;
 }
+.multiline.equal > * {
+  flex-grow: 1;
+}
 .cross-center {
   align-items: center;
 }
