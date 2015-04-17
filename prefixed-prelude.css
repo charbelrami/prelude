@@ -293,6 +293,14 @@ img {
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
+.multiline.gutters-ver {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.multiline.gutters-ver > * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .equal > * {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;

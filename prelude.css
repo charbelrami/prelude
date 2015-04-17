@@ -179,6 +179,14 @@ img {
 .multiline > * {
   flex-shrink: 0;
 }
+.multiline.gutters-ver {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.multiline.gutters-ver > * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .equal > * {
   flex-grow: 1;
 }
