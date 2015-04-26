@@ -302,12 +302,6 @@ img {
       -ms-flex: 1 0 0;
           flex: 1 0 0;
 }
-.multiline.equal > * {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-}
 .cross-center {
   -webkit-box-align: center;
   -webkit-align-items: center;

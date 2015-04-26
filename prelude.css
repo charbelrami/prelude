@@ -187,9 +187,6 @@ img {
 .equal > * {
   flex: 1 0 0;
 }
-.multiline.equal > * {
-  flex: 1 0 auto;
-}
 .cross-center {
   align-items: center;
 }
