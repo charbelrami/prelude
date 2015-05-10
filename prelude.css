@@ -146,12 +146,12 @@ img {
   }
 }
 .gutters {
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .gutters > * {
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .gutters-ver {
   overflow: auto;
